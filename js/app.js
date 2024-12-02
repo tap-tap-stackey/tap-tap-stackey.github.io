@@ -11,12 +11,12 @@ var app = new Framework7({
         {
             name: 'home',
             path: baseUrl + '/',
-            url: './' + baseUrl + 'pages/home.html',
+            url: './' + baseUrl + '/pages/home.html',
         },
         {
             name: 'settings',
             path: baseUrl + '/settings',
-            url: './' + baseUrl + 'pages/settings.html',
+            url: './' + baseUrl + '/pages/settings.html',
         },
         {
             name: 'news',
