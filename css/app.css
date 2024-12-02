@@ -24,16 +24,22 @@
     background-color: #5c148c!important;
 }
 .bg-color-6 {
-    background: #5c148c;
-    background: linear-gradient(0deg,
-    #69188C 0%,
-    #B629F2 63%);
+    background: #B300FF;
+    background: linear-gradient(90deg,
+    #B300FF 0%,
+    #E29EFF 100%);
+}
+.bg-color-7 {
+    background: rgba(217, 217, 217, 0.3)!important;
 }
 .text-color-1 {
     color: #000000!important;
 }
 .text-color-2 {
     color: #5C148C!important;
+}
+.text-color-3 {
+    color: #9900DA!important;
 }
 .rounded-8 {
     border-radius:8px!important;
