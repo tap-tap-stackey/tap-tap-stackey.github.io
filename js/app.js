@@ -1,4 +1,5 @@
-let baseUrl = 'tap-tap-stackey';
+// let baseUrl = '';
+let baseUrl = 'tap-tap-stackey/';
 var app = new Framework7({
     el: '#app',
     // App Name
@@ -10,13 +11,13 @@ var app = new Framework7({
     routes: [
         {
             name: 'home',
-            path: baseUrl + '/',
-            url: './' + baseUrl + '/pages/home.html',
+            path: '/',
+            url: './' + baseUrl + 'pages/home.html',
         },
         {
             name: 'settings',
-            path: baseUrl + '/settings',
-            url: './' + baseUrl + '/pages/settings.html',
+            path: '/settings',
+            url: './' + baseUrl + 'pages/settings.html',
         },
         {
             name: 'news',
