@@ -1,0 +1,45 @@
+* {
+    font-family: "Lexend", sans-serif;
+}
+.league-spartan {
+    font-family: "League Spartan", sans-serif;
+}
+.bg-color-1 {
+    background-color: #220039!important;
+}
+.bg-color-2 {
+    background: rgb(248,172,255);
+    background: linear-gradient(135deg,
+        rgba(96,121,236,1) 0%,
+        rgba(255,239,254,1) 63%,
+        #714EEC 118%);
+}
+.bg-color-3 {
+    background-color: #8342D8!important;
+}
+.bg-color-4 {
+    background-color:rgba(0,0,0,0);
+}
+.bg-color-5 {
+    background-color: #5c148c!important;
+}
+.bg-color-6 {
+    background: #5c148c;
+    background: linear-gradient(0deg,
+    #69188C 0%,
+    #B629F2 63%);
+}
+.text-color-1 {
+    color: #000000!important;
+}
+.text-color-2 {
+    color: #5C148C!important;
+}
+.rounded-8 {
+    border-radius:8px!important;
+}
+.background-image-cover {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

@@ -8,43 +8,134 @@
     <!-- Color theme for statusbar (Android only) -->
     <meta name="theme-color" content="#2196f3">
     <!-- Your app title -->
-    <title>My App</title>
+    <title>Tap Tap Stackey</title>
     <!-- Path to Framework7 Library Bundle CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7/framework7-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/framework7-icons@5.0.5/css/framework7-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=League+Spartan:wght@100..900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 <!-- App root element -->
-<div id="app">
-
+<div class="dark" id="app">
     <!-- Your main view, should have "view-main" class -->
     <div class="view view-main">
         <!-- Initial Page, "data-name" contains page name -->
-        <div data-name="home" class="page">
+        <div data-name="home" class="page bg-color-2">
 
             <!-- Top Navbar -->
             <div class="navbar">
-                <div class="navbar-bg"></div>
-                <div class="navbar-inner">
-                    <div class="title">Awesome App</div>
+                <div class="navbar-bg bg-color-1"></div>
+                <div class="navbar-inner justify-content-center">
+                    <div class="title">Tap Tap Stackey</div>
                 </div>
             </div>
 
-            <!-- Bottom Toolbar -->
-            <div class="toolbar toolbar-bottom">
+            <div class="toolbar tabbar toolbar-bottom">
                 <div class="toolbar-inner">
-                    <!-- Toolbar links -->
-                    <a href="#" class="link">Link 1</a>
-                    <a href="#" class="link">Link 2</a>
+                    <a href="#tab-1" class="tab-link bg-color-3 tab-link-active">HOME</a>
+                    <a href="#tab-2" class="tab-link bg-color-3">TROOP</a>
+                    <a href="#tab-3" class="tab-link bg-color-3">FRIENDS</a>
+                    <a href="#tab-4" class="tab-link bg-color-3">TASKS</a>
+                    <a href="#tab-5" class="tab-link bg-color-3">LB</a>
                 </div>
             </div>
 
-            <!-- Scrollable page content -->
             <div class="page-content">
-                <p>Page content goes here</p>
-                <!-- Link to another page -->
-                <a href="/about/">About app</a>
+                <div class="block" style="margin-top:16px; margin-bottom:8px">
+                    <div class="display-flex">
+                        <div class="display-block" style="width:100%">
+                            <input type="text" placeholder="Search" class="bg-color-white text-color-1 padding rounded-8" style="width:100%" />
+                        </div>
+
+                        <div class="display-block">
+                            <button class="button button-fill bg-color-5" style="height:48.8px; width:48.8px; margin-left:6px">
+                                <i class="f7-icons text-color-white">gear_alt_fill</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block" style="margin-top:0; margin-bottom:5px">
+                    <div class="display-flex" style="margin:-3px">
+                        <div class="" style="padding:3px; width:68%">
+                            <div class="card bg-color-white rounded-8 no-margin">
+                                <div class="card-content card-content-padding rounded-8 text-color-black">
+                                    <div class="display-flex align-items-center">
+                                        <div style="margin-right:9px">Amateur&nbsp;1/11</div>
+                                        <div class="bg-color-1" style="margin-left:9px; height:14px; border-radius:7px; width:100%">
+                                            <div class="bg-color-6" style="height:10px; width:calc(60% - 4px); border-radius:5px; margin-top:2px; margin-left:2px"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="" style="padding:3px; width:33.33333%">
+                            <div class="card bg-color-white rounded-8 no-margin" style="height:53px">
+                                <div class="card-content rounded-8" style="padding:6px">
+                                    <div class="text-color-black" style="font-size:0.75em">Amateur&nbsp;1/11</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block" style="margin-top:0; margin-bottom:16px">
+                    <div class="display-flex" style="margin:-3px">
+                        <div class="" style="padding:3px; width:33.333333%">
+                            <div class="card bg-color-white rounded-8 no-margin">
+                                <div class="card-content card-content-padding rounded-8">
+                                    sdf
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="" style="padding:3px; width:33.333333%">
+                            <div class="card bg-color-white rounded-8 no-margin">
+                                <div class="card-content card-content-padding rounded-8">
+                                    sdf
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="" style="padding:3px; width:33.333333%">
+                            <div class="card bg-color-white rounded-8 no-margin">
+                                <div class="card-content card-content-padding rounded-8">
+                                    sdf
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block" style="margin-top:0; margin-bottom:24px">
+                    <div class="display-flex justify-content-center align-items-center">
+                        <div class="" style="padding:0 6px 0 6px">
+                            <img src="img/coin.png" style="width:32px" alt="Coin" />
+                        </div>
+
+                        <div class="league-spartan text-color-2" style="padding:0 6px 0 6px; font-size:2.4em; font-weight:600">1,000</div>
+                    </div>
+
+                    <div class="" style="padding:0 30px 0 30px">
+                        <div class="bg-color-1" style="height:14px; border-radius:7px; width:100%">
+                            <div class="bg-color-6" style="height:10px; width:calc(75% - 4px); border-radius:5px; margin-top:2px; margin-left:2px"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block" style="margin-top:0; margin-bottom:8px">
+                    <div class="background-image-cover rounded-8" style="background-image:url('img/sky-bg.png'); width:100%; height:305px">
+                        <img src="img/kousei.png" style="width:100%; margin-top:-20px" alt="" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
