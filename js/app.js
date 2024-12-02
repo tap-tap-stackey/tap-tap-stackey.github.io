@@ -1,4 +1,4 @@
-let baseUrl = 'tap-tap-stackey';
+let baseUrl = '/tap-tap-stackey';
 var app = new Framework7({
     el: '#app',
     // App Name
