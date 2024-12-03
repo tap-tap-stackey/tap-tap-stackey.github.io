@@ -12,7 +12,7 @@ var app = new Framework7({
         {
             name: 'home',
             path: '/',
-            url: './' + baseUrl + 'pages/home.html',
+            url: baseUrl + 'pages/home.html',
         },
         {
             name: 'settings',
