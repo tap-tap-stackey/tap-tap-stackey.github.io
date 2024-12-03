@@ -11,7 +11,7 @@ var app = new Framework7({
     routes: [
         {
             name: 'home',
-            path: '/',
+            path: '/tap-tap-stackey/',
             url: 'https://bernardhistorillo.github.io/tap-tap-stackey/pages/home.html',
         },
         // {
