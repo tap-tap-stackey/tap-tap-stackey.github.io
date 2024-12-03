@@ -1,5 +1,9 @@
-// let baseUrl = '';
-let baseUrl = 'tap-tap-stackey/';
+// let directory = '';
+// let baseUrl = './';
+
+let directory = 'tap-tap-stackey/';
+let baseUrl = 'https://bernardhistorillo.github.io/tap-tap-stackey/';
+
 var app = new Framework7({
     el: '#app',
     // App Name
@@ -11,14 +15,14 @@ var app = new Framework7({
     routes: [
         {
             name: 'home',
-            path: '/tap-tap-stackey/',
-            url: './tap-tap-stackey/pages/home.html',
+            path: directory + '/',
+            url: baseUrl + 'pages/home.html',
         },
-        // {
-        //     name: 'settings',
-        //     path: '/settings',
-        //     url: './' + baseUrl + 'pages/settings.html',
-        // },
+        {
+            name: 'settings',
+            path: directory + '/settings',
+            url: baseUrl + 'pages/settings.html',
+        },
         // {
         //     name: 'news',
         //     path: '/news/',
