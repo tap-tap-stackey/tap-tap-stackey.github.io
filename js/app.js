@@ -12,7 +12,7 @@ var app = new Framework7({
         {
             name: 'home',
             path: '/tap-tap-stackey/',
-            url: 'https://bernardhistorillo.github.io/tap-tap-stackey/pages/home.html',
+            url: './tap-tap-stackey/pages/home.html',
         },
         // {
         //     name: 'settings',
