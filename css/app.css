@@ -1,3 +1,43 @@
+/* Start: Tap Effect */
+.clicker {
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    background: #8342D8;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(0);
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    z-index: 999;
+    pointer-events: none;
+}
+.clicker.is-active {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    transition: opacity 400ms ease, transform 400ms ease;
+    transform: scale(1);
+}
+.tap {
+    position: relative;
+}
+.tap:after {
+    display: inline-block;
+    content: attr(data-click);
+}
+@media screen and (max-width: 480px) {
+    .tap:after {
+        content: attr(data-tap);
+    }
+}
+#app {
+    transform-style: preserve-3d;
+}
+/* End: Tap Effect */
+
 * {
     font-family: "Lexend", sans-serif;
 }
@@ -48,4 +88,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+.daily-select .background-image-cover {
+    opacity:0;
+    transition:0.5s;
+}
+.daily-select.active .background-image-cover {
+    opacity:1;
+}
+.daily-select {
+    color:#ffffff;
+    transition:0.5s;
+}
+.daily-select.active {
+    color:#000000;
 }
