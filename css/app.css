@@ -39,7 +39,8 @@
 /* End: Tap Effect */
 
 * {
-    font-family: "Lexend", sans-serif;
+    /*font-family: "Lexend", sans-serif;*/
+    font-family: "League Spartan", sans-serif;
 }
 .league-spartan {
     font-family: "League Spartan", sans-serif;
@@ -102,4 +103,7 @@
 }
 .daily-select.active {
     color:#000000;
+}
+.sheet-backdrop {
+    background-color:rgba(0,0,0,0.7);
 }
