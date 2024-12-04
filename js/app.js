@@ -90,11 +90,11 @@ let $$ = Dom7;
 //# sourceURL=coffeescript
 //# sourceURL=pen.js
 
-let directory = '';
-let baseUrl = './';
+// let directory = '';
+// let baseUrl = './';
 
-// let directory = '/tap-tap-stackey';
-// let baseUrl = 'https://bernardhistorillo.github.io/tap-tap-stackey/';
+let directory = '/tap-tap-stackey';
+let baseUrl = 'https://bernardhistorillo.github.io/tap-tap-stackey/';
 
 var app = new Framework7({
     el: '#app',
