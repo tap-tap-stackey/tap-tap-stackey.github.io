@@ -1,4 +1,4 @@
-// (function(){var n,t,i;t=function(n,t){return window.setTimeout(t,n)},i={WebkitTransition:"webkitTransitionEnd",MozTransition:"transitionend",OTransition:"oTransitionEnd otransitionend",msTransition:"MSTransitionEnd",transition:"transitionend"},n=function(n,t){var i,o;switch(i="touchstart"===n.type.toLowerCase(),t){case"top":o="pageY";break;case"left":o="pageX"}return i?n.originalEvent.touches[0][o]:n[o]},$(document).on("mousedown touchstart",function(o){var e;return(e=$('<div class="clicker"></div>')).css({left:n(o,"left"),top:n(o,"top")}),$("body").append(e),t(0,function(){return e.on(i[Modernizr.prefixed("transition")],function(){return e.remove()}),e.addClass("is-active")})})}).call(this);
+(function(){var n,t,i;t=function(n,t){return window.setTimeout(t,n)},i={WebkitTransition:"webkitTransitionEnd",MozTransition:"transitionend",OTransition:"oTransitionEnd otransitionend",msTransition:"MSTransitionEnd",transition:"transitionend"},n=function(n,t){var i,o;switch(i="touchstart"===n.type.toLowerCase(),t){case"top":o="pageY";break;case"left":o="pageX"}return i?n.originalEvent.touches[0][o]:n[o]},$(document).on("mousedown touchstart",function(o){var e;return(e=$('<div class="clicker"></div>')).css({left:n(o,"left"),top:n(o,"top")}),$("body").append(e),t(0,function(){return e.on(i[Modernizr.prefixed("transition")],function(){return e.remove()}),e.addClass("is-active")})})}).call(this);
 
 let fullUrl = window.location.href;
 let environment = fullUrl.includes("https://") ? "production" : "local";
@@ -8,8 +8,6 @@ let baseUrl = (environment === "production") ? 'https://bernardhistorillo.github
 let app;
 let introductionSheet;
 
-console.log(fullUrl)
-
 $(document).ready(function() {
     app = new Framework7({
         el: '#app',
@@ -18,6 +16,13 @@ $(document).ready(function() {
         // Enable swipe panel
         panel: {
             swipe: true,
+        },
+        sheet: {
+            swipeToClose :true,
+            closeByBackdropClick : true,
+            closeByOutsideClick : true,
+            closeOnEscape : true,
+            backdrop: true,
         },
         routes: [
             {
@@ -94,6 +99,7 @@ $(document).ready(function() {
     })
 
     setTimeout(function () {
+        $(".navbar-inner .title").css("left", "0!important");
         introductionSheet.open()
     }, 1000);
 });

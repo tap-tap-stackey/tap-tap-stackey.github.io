@@ -106,8 +106,7 @@
 }
 .sheet-backdrop {
     background:rgba(0,0,0,0.7);
-    min-height:100vh;
-    min-width:100vw;
-    height:initial!important;
-    width:initial!important;
+}
+.device-android div[data-name='home'] .navbar-inner {
+    justify-content: center;
 }
