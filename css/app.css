@@ -106,8 +106,8 @@
 }
 .sheet-backdrop {
     background:rgba(0,0,0,0.7);
-    transform: translateZ(0);
-    will-change: opacity;
-    -webkit-backdrop-filter: none; /* For potential layer issues */
-    -webkit-transform: translateZ(0);
+    min-height:100vh;
+    min-width:100vw;
+    height:initial!important;
+    width:initial!important;
 }
