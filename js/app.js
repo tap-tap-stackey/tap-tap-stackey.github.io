@@ -11,11 +11,12 @@ let introductionSheet;
 $(document).ready(function() {
     app = new Framework7({
         el: '#app',
-        // App Name
-        name: 'My App',
-        // Enable swipe panel
+        name: 'Tap Tap Stackey',
         panel: {
             swipe: true,
+        },
+        view: {
+            browserHistory: true
         },
         theme: 'md',
         routes: [
@@ -29,33 +30,11 @@ $(document).ready(function() {
                 path: directory + '/settings',
                 url: baseUrl + 'pages/settings.html',
             },
-            // {
-            //     name: 'news',
-            //     path: '/news/',
-            //     url: './pages/news.html',
-            //     options: {
-            //         animate: false,
-            //     },
-            // },
-            // {
-            //     name: 'users',
-            //     path: '/users/',
-            //     componentUrl: './pages/users.html',
-            //     options: {
-            //         props: {
-            //             users: ['John Doe', 'Vladimir Kharlampidi', 'Timo Ernst'],
-            //         },
-            //     },
-            //     on: {
-            //         pageAfterIn: function test (e, page) {
-            //             // do something after page gets into the view
-            //         },
-            //         pageInit: function (e, page) {
-            //             // do something when page initialized
-            //         },
-            //     }
-            // },
-            // Default route, match to all pages (e.g. 404 page)
+            {
+                name: 'select-language',
+                path: directory + '/select-language',
+                url: baseUrl + 'pages/select-language.html',
+            },
             {
                 path: '(.*)',
                 url: './pages/404.html',

@@ -130,3 +130,12 @@
     background: #8342D8;
     border-color: #8342D8;
 }
+.md .radio input[type=radio]~.icon-radio, .md label.item-radio input[type=radio]~* .icon-radio, .md label.item-radio input[type=radio]~.icon-radio {
+    border-color: #5C148C;
+}
+.md .radio input[type=radio]:checked~.icon-radio, .md label.item-radio input[type=radio]:checked~* .icon-radio, .md label.item-radio input[type=radio]:checked~.icon-radio {
+    border-color: #5C148C;
+}
+.md .radio input[type=radio]:checked~.icon-radio:after, .md label.item-radio input[type=radio]:checked~* .icon-radio:after, .md label.item-radio input[type=radio]:checked~.icon-radio:after {
+    background-color: #5C148C;
+}
