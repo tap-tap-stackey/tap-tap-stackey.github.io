@@ -107,6 +107,3 @@
 .sheet-backdrop {
     background:rgba(0,0,0,0.7);
 }
-.device-android div[data-name='home'] .navbar-inner {
-    justify-content: center;
-}
