@@ -139,3 +139,12 @@
 .md .radio input[type=radio]:checked~.icon-radio:after, .md label.item-radio input[type=radio]:checked~* .icon-radio:after, .md label.item-radio input[type=radio]:checked~.icon-radio:after {
     background-color: #5C148C;
 }
+.dialog {
+    background-color: #5c148c!important;
+}
+.dialog-text {
+    font-size:1.1em;
+}
+.dialog-button {
+    color:white;
+}

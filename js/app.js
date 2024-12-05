@@ -6,7 +6,6 @@ let directory = (environment === "production") ? '/tap-tap-stackey' : '';
 let baseUrl = (environment === "production") ? 'https://bernardhistorillo.github.io/tap-tap-stackey/' : './';
 
 let app;
-let introductionSheet;
 
 $(document).ready(function() {
     app = new Framework7({
@@ -42,41 +41,43 @@ $(document).ready(function() {
         ],
     });
 
-    var mainView = app.views.create('.view-main');
+    app.views.create('.view-main');
 
-    let sheetContent = '    <div class="sheet-modal introduction-sheet background-image-cover" style="background-image:url(\'img/bg-3.webp\')">';
-    sheetContent += '           <div class="sheet-modal-inner">';
-    sheetContent += '               <div class="page-content display-flex flex-direction-column justify-content-space-between" style="padding:14px 12px">';
-    sheetContent += '                   <div class="display-flex justify-content-end">';
-    sheetContent += '                       <div class="display-flex justify-content-center align-items-center rounded-8 hide-introduction-sheet" style="padding:6px; border:1px solid #ffffff; line-height:0">';
-    sheetContent += '                           <i class="f7-icons text-color-white display-block" style="font-size:1.3em; font-weight:800">xmark</i>';
-    sheetContent += '                       </div>';
-    sheetContent += '                   </div>';
-    sheetContent += '                   <div class="display-flex flex-direction-column align-items-center">';
-    sheetContent += '                       <div class="text-color-white text-align-center" style="font-size:1.6em; margin-bottom:24px">DESCRIPTION</div>';
-    sheetContent += '                       <div class="text-align-center">';
-    sheetContent += '                           <button type="button" class="button button-fill bg-color-5 rounded-8 text-color-white hide-introduction-sheet" style="font-size:1.2em; padding:22px 80px; width:initial; margin-bottom:24px">Let\'s Play!</button>';
-    sheetContent += '                       </div>';
-    sheetContent += '                   </div>';
-    sheetContent += '               </div>';
-    sheetContent += '           </div>';
-    sheetContent += '       </div>';
+    initializeIntroductionSheet();
+    initializeDeleteAccountSheet();
+});
+
+// Home
+let introductionSheet;
+let initializeIntroductionSheet = function() {
+    let introductionSheetContent = '    <div class="sheet-modal introduction-sheet background-image-cover" style="background-image:url(\'img/bg-3.webp\')">';
+    introductionSheetContent += '           <div class="sheet-modal-inner">';
+    introductionSheetContent += '               <div class="page-content display-flex flex-direction-column justify-content-space-between" style="padding:14px 12px">';
+    introductionSheetContent += '                   <div class="display-flex justify-content-end">';
+    introductionSheetContent += '                       <div class="display-flex justify-content-center align-items-center rounded-8 hide-introduction-sheet" style="padding:6px; border:1px solid #ffffff; line-height:0">';
+    introductionSheetContent += '                           <i class="f7-icons text-color-white display-block" style="font-size:1.3em; font-weight:800">xmark</i>';
+    introductionSheetContent += '                       </div>';
+    introductionSheetContent += '                   </div>';
+    introductionSheetContent += '                   <div class="display-flex flex-direction-column align-items-center">';
+    introductionSheetContent += '                       <div class="text-color-white text-align-center" style="font-size:1.6em; margin-bottom:24px">DESCRIPTION</div>';
+    introductionSheetContent += '                       <div class="text-align-center">';
+    introductionSheetContent += '                           <button type="button" class="button button-fill bg-color-5 rounded-8 text-color-white hide-introduction-sheet" style="font-size:1.2em; padding:22px 80px; width:initial; margin-bottom:24px">Let\'s Play!</button>';
+    introductionSheetContent += '                       </div>';
+    introductionSheetContent += '                   </div>';
+    introductionSheetContent += '               </div>';
+    introductionSheetContent += '           </div>';
+    introductionSheetContent += '       </div>';
 
     introductionSheet = app.sheet.create({
-        content: sheetContent,
-        on: {
-            opened: function () {
-                console.log('Sheet opened')
-            }
-        }
-    })
+        content: introductionSheetContent
+    });
 
     setTimeout(function () {
         if(environment === "production") {
             introductionSheet.open()
         }
     }, 1000);
-});
+};
 
 $(document).on("click", ".hide-introduction-sheet", function () {
     introductionSheet.close()
@@ -85,4 +86,53 @@ $(document).on("click", ".hide-introduction-sheet", function () {
 $(document).on("click", ".daily-select", function () {
     $(".daily-select").removeClass("active");
     $(this).addClass("active");
+});
+
+// Settings
+let deleteAccountSheet;
+let initializeDeleteAccountSheet = function() {
+    let content = '    <div class="sheet-modal background-image-cover" style="background-image:url(\'img/bg-3.webp\')">';
+    content += '           <div class="sheet-modal-inner">';
+    content += '               <div class="page-content display-flex flex-direction-column justify-content-space-between" style="padding:14px 12px">';
+    content += '                   <div class="display-flex justify-content-end">';
+    content += '                       <div class="display-flex justify-content-center align-items-center rounded-8 hide-delete-account-sheet" style="padding:6px; border:1px solid #ffffff; line-height:0">';
+    content += '                           <i class="f7-icons text-color-white display-block" style="font-size:1.3em; font-weight:800">xmark</i>';
+    content += '                       </div>';
+    content += '                   </div>';
+    content += '                   <div class="display-flex flex-direction-column align-items-center">';
+    content += '                       <div class="text-color-white text-align-center" style="font-size:1.4em; margin-bottom:30px; line-height:1.1em">Are you sure you want<br/> to delete your account?</div>';
+    content += '                       <div class="text-align-center" style="margin-bottom:12px">';
+    content += '                           <button type="button" class="button button-fill bg-color-5 rounded-8 text-color-white" id="delete-account" style="font-size:1.2em; padding:22px 0; width:210px">Delete Account</button>';
+    content += '                       </div>';
+    content += '                       <div class="text-align-center">';
+    content += '                           <button type="button" class="button button-fill bg-color-5 rounded-8 text-color-white hide-delete-account-sheet" style="font-size:1.2em; padding:22px 0; width:210px; margin-bottom:16px">Cancel</button>';
+    content += '                       </div>';
+    content += '                   </div>';
+    content += '               </div>';
+    content += '           </div>';
+    content += '       </div>';
+
+    deleteAccountSheet = app.sheet.create({
+        content: content
+    });
+};
+
+$(document).on("click", ".hide-delete-account-sheet", function () {
+    deleteAccountSheet.close()
+});
+
+$(document).on("click", "#delete-account-confirm", function () {
+    deleteAccountSheet.open()
+});
+
+$(document).on("click", "#delete-account", function () {
+    app.dialog.preloader("Processing", "white");
+
+    setTimeout(function() {
+        app.dialog.close();
+
+        app.dialog.alert("You have successfully deleted your account.", "Success!", function() {
+            deleteAccountSheet.close();
+        });
+    }, 2000);
 });
