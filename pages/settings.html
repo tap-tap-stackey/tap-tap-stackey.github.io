@@ -8,19 +8,90 @@
         </div>
     </div>
 
-    <div class="toolbar tabbar toolbar-bottom">
+    <div class="toolbar tabbar toolbar-bottom" style="height:64px">
         <div class="toolbar-inner">
-            <a href="#tab-1" class="tab-link bg-color-3 tab-link-active">HOME</a>
-            <a href="#tab-2" class="tab-link bg-color-3">TROOP</a>
-            <a href="#tab-3" class="tab-link bg-color-3">FRIENDS</a>
-            <a href="#tab-4" class="tab-link bg-color-3">TASKS</a>
-            <a href="#tab-5" class="tab-link bg-color-3">LB</a>
+            <a href="#tab-1" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
+                <img src="img/home.png" style="width:38px" alt="Home" />
+            </a>
+            <a href="#tab-2" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
+                <img src="img/troop.png" style="width:38px" alt="Troop" />
+            </a>
+            <a href="#tab-3" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
+                <img src="img/friends.png" style="width:38px" alt="Friends" />
+            </a>
+            <a href="#tab-4" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
+                <img src="img/ranking.png" style="width:38px" alt="Ranking" />
+            </a>
+            <a href="#tab-5" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
+                <img src="img/tasks.png" style="width:38px" alt="Tasks" />
+            </a>
+            <a href="#tab-5" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
+                <img src="img/wallet.png" style="width:38px" alt="Wallet" />
+            </a>
         </div>
     </div>
 
-    <div class="page-content" style="padding-top:72px">
+    <div class="page-content">
         <div class="block">
-            <div>Settings</div>
+            <div style="line-height:0; font-size:20px">Settings</div>
+
+            <div class="list settings-buttons" style="margin-bottom:10px">
+                <ul>
+                    <li>
+                        <a class="item-link item-content bg-color-white rounded-8">
+                            <div class="item-inner">
+                                <div class="item-title text-color-2" style="font-size:1.1em">Select Language</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list settings-buttons" style="margin-top:10px">
+                <ul>
+                    <li>
+                        <a class="item-link item-content bg-color-white rounded-8">
+                            <div class="item-inner">
+                                <div class="item-title text-color-2" style="font-size:1.1em">Delete Account</div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-color-white" style="width:100%; height:1px; margin-bottom:32px"></div>
+
+            <div class="list" style="margin-top:10px">
+                <ul>
+                    <li>
+                        <div class="item-content" style="padding-left:0">
+                            <div class="item-inner" style="padding-right:0">
+                                <div class="item-title text-color-white" style="font-size:1.1em">Haptic Feedback</div>
+                                <div class="item-after">
+                                    <label class="toggle toggle-init">
+                                        <input type="checkbox">
+                                        <span class="toggle-icon"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="item-content" style="padding-left:0">
+                            <div class="item-inner" style="padding-right:0">
+                                <div class="item-title text-color-white" style="font-size:1.1em">Coins Animation</div>
+                                <div class="item-after">
+                                    <label class="toggle toggle-init">
+                                        <input type="checkbox">
+                                        <span class="toggle-icon"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

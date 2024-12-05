@@ -1,9 +1,9 @@
 /* Start: Tap Effect */
 .clicker {
-    width: 100px;
-    height: 100px;
-    margin-left: -50px;
-    margin-top: -50px;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -40px;
     background: #8342D8;
     border-radius: 100%;
     position: absolute;
@@ -106,4 +106,27 @@
 }
 .sheet-backdrop {
     background:rgba(0,0,0,0.7);
+}
+.bottom-tab-button {
+    background-color: #8342D8!important;
+}
+.bottom-tab-button.active {
+  background-color: #5C148C!important;
+}
+.settings-buttons .item-inner:before {
+    color:#5C148C!important;
+}
+.md .toggle-icon {
+    background: #220039;
+    border: 2px solid #220039;
+}
+.md .toggle-icon:after {
+    background: white;
+}
+.md .toggle input[type=checkbox]:checked+.toggle-icon:after {
+    background: white;
+}
+.md .toggle input[type=checkbox]:checked+.toggle-icon {
+    background: #8342D8;
+    border-color: #8342D8;
 }

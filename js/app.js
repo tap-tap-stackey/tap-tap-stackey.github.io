@@ -93,8 +93,9 @@ $(document).ready(function() {
     })
 
     setTimeout(function () {
-        $(".navbar-inner .title").css("left", "0!important");
-        introductionSheet.open()
+        if(environment === "production") {
+            introductionSheet.open()
+        }
     }, 1000);
 });
 
