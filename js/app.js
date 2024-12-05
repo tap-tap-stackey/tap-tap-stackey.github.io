@@ -1,5 +1,12 @@
 (function(){var n,t,i;t=function(n,t){return window.setTimeout(t,n)},i={WebkitTransition:"webkitTransitionEnd",MozTransition:"transitionend",OTransition:"oTransitionEnd otransitionend",msTransition:"MSTransitionEnd",transition:"transitionend"},n=function(n,t){var i,o;switch(i="touchstart"===n.type.toLowerCase(),t){case"top":o="pageY";break;case"left":o="pageX"}return i?n.originalEvent.touches[0][o]:n[o]},$(document).on("mousedown touchstart",function(o){var e;return(e=$('<div class="clicker"></div>')).css({left:n(o,"left"),top:n(o,"top")}),$("body").append(e),t(0,function(){return e.on(i[Modernizr.prefixed("transition")],function(){return e.remove()}),e.addClass("is-active")})})}).call(this);
 
+// Attach vibration on all tappable elements
+document.addEventListener('click', function () {
+    if (navigator.vibrate) {
+        navigator.vibrate(50); // Vibrate for 50 milliseconds
+    }
+});
+
 let fullUrl = window.location.href;
 let environment = fullUrl.includes("https://") ? "production" : "local";
 let directory = (environment === "production") ? '/tap-tap-stackey' : '';
