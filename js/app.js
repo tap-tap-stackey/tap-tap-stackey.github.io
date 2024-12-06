@@ -33,7 +33,11 @@ $(document).ready(function() {
                 name: 'select-language',
                 path: directory + '/select-language',
                 url: baseUrl + 'pages/select-language.html',
-            }
+            },
+            {
+                path: '(.*)',
+                url: './pages/404.html',
+            },
         ],
     });
 
