@@ -6,8 +6,29 @@ let directory = (environment === "production") ? '/tap-tap-stackey' : '';
 let baseUrl = (environment === "production") ? 'https://bernardhistorillo.github.io/tap-tap-stackey/' : './';
 
 let app;
+let routes = [
+    {
+        name: 'home',
+        path: '/',
+        url: './pages/home.html',
+    },
+    {
+        name: 'settings',
+        path: '/settings',
+        url: './pages/settings.html',
+    },
+    {
+        name: 'select-language',
+        path: '/settings/select-language',
+        url: './pages/select-language.html',
+    },
+];
 
-$(document).ready(function() {
+$(window).load(function() {
+    routes.forEach(async function (route) {
+        await $.get(route.url);
+    });
+
     app = new Framework7({
         el: '#app',
         name: 'Tap Tap Stackey',
@@ -15,38 +36,24 @@ $(document).ready(function() {
             swipe: true,
         },
         view: {
-            browserHistory: true
+            browserHistory: true,
+            cache: true,
+            xhrCache: true, // Cache XHR requests
         },
         theme: 'md',
-        routes: [
-            {
-                name: 'home',
-                path: '/',
-                url: './pages/home.html',
-            },
-            {
-                name: 'settings',
-                path: '/settings',
-                url: './pages/settings.html',
-            },
-            {
-                name: 'select-language',
-                path: '/settings/select-language',
-                url: './pages/select-language.html',
-            },
-            {
-                path: '(.*)',
-                url: './pages/404.html',
-            },
-        ],
+        routes: routes,
     });
 
-    app.views.create('.view-main');
+    let mainView = app.views.create('.view-main');
 
     // Initialize Sheets
     initializeIntroductionSheet();
     initializeDeleteAccountSheet();
     initializeDailyRewardsSheet();
+
+    setTimeout(function() {
+        $("body").css("opacity", "1");
+    }, 500)
 });
 
 // Home
