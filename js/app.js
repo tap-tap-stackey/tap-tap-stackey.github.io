@@ -21,18 +21,18 @@ $(document).ready(function() {
         routes: [
             {
                 name: 'home',
-                path: directory + '/',
-                url: baseUrl + 'pages/home.html',
+                path: '/',
+                url: './pages/home.html',
             },
             {
                 name: 'settings',
-                path: directory + '/settings',
-                url: baseUrl + 'pages/settings.html',
+                path: '/settings',
+                url: './pages/settings.html',
             },
             {
                 name: 'select-language',
-                path: directory + '/select-language',
-                url: baseUrl + 'pages/select-language.html',
+                path: '/settings/select-language',
+                url: './pages/select-language.html',
             },
             {
                 path: '(.*)',
