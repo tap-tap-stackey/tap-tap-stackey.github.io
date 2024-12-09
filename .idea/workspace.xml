@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="457e4b6b-3637-4ca7-8b5e-8e2b6dda4d11" name="Changes" comment="Fix tabbar height">
+    <list default="true" id="457e4b6b-3637-4ca7-8b5e-8e2b6dda4d11" name="Changes" comment="Add preloading of html pages">
+      <change afterPath="$PROJECT_DIR$/img/troop/hiroshi.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/troop/sakura.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/troop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,23 +44,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Bernard/Codes/tap-tap-stackey/pages&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;ssh.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/Bernard/Codes/tap-tap-stackey/img/troop",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ssh.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Bernard\Codes\tap-tap-stackey\img\troop" />
       <recent name="E:\Bernard\Codes\tap-tap-stackey\pages" />
       <recent name="E:\Bernard\Codes\tap-tap-stackey\img" />
       <recent name="E:\Bernard\Codes\tap-tap-stackey\css" />
@@ -79,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733032837597</updated>
       <workItem from="1733032840351" duration="16184000" />
-      <workItem from="1733066545209" duration="81931000" />
+      <workItem from="1733066545209" duration="100748000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -393,7 +398,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733472096432</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Add preloading of html pages">
+      <option name="closed" value="true" />
+      <created>1733486250504</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1733486250504</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,6 +439,7 @@
     <MESSAGE value="Update version" />
     <MESSAGE value="Update routes" />
     <MESSAGE value="Fix tabbar height" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix tabbar height" />
+    <MESSAGE value="Add preloading of html pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add preloading of html pages" />
   </component>
 </project>

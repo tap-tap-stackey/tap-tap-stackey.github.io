@@ -42,6 +42,21 @@
     /*font-family: "Lexend", sans-serif;*/
     font-family: "League Spartan", sans-serif;
 }
+.position-absolute {
+    position: absolute!important;
+}
+.position-relative {
+    position: relative!important;
+}
+.line-height-0 {
+    line-height:0!important;
+}
+.w-100 {
+    width:100%!important;
+}
+.h-100 {
+    height:100%!important;
+}
 .league-spartan {
     font-family: "League Spartan", sans-serif;
 }
@@ -107,10 +122,10 @@
 .sheet-backdrop {
     background:rgba(0,0,0,0.7);
 }
-.bottom-tab-button {
+.tab-link {
     background-color: #8342D8!important;
 }
-.bottom-tab-button.active {
+.tab-link.tab-link-active {
   background-color: #5C148C!important;
 }
 .settings-buttons .item-inner:before {
@@ -147,4 +162,16 @@
 }
 .dialog-button {
     color:white;
+}
+.daily-reward-day {
+    background-color:#ffffff;
+}
+.daily-reward-day .day-label {
+    color:#000000;
+}
+.daily-reward-day.active {
+    background-color:#8342d8;
+}
+.daily-reward-day.active .day-label {
+    color:#ffffff;
 }

@@ -8,156 +8,481 @@
 
     <div class="toolbar tabbar toolbar-bottom" style="min-height:64px">
         <div class="toolbar-inner">
-            <a href="#tab-1" class="tab-link bottom-tab-button active" style="padding:20px 0; border:0">
+            <a href="#tab-home" class="tab-link bottom-tab-button active" style="padding:20px 0; border:0">
                 <img src="img/home.png" style="width:38px" alt="Home" />
             </a>
-            <a href="#tab-2" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
+            <a href="#tab-troop" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
                 <img src="img/troop.png" style="width:38px" alt="Troop" />
             </a>
-            <a href="#tab-3" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
+            <a href="#tab-friends" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
                 <img src="img/friends.png" style="width:38px" alt="Friends" />
             </a>
-            <a href="#tab-4" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
+            <a href="#tab-ranking" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
                 <img src="img/ranking.png" style="width:38px" alt="Ranking" />
             </a>
-            <a href="#tab-5" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
+            <a href="#tab-tasks" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
                 <img src="img/tasks.png" style="width:38px" alt="Tasks" />
             </a>
-            <a href="#tab-5" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
+            <a href="#tab-wallet" class="tab-link bottom-tab-button" style="padding:20px 0; border:0">
                 <img src="img/wallet.png" style="width:38px" alt="Wallet" />
             </a>
         </div>
     </div>
 
-    <div class="page-content" style="padding-top:72px">
-        <div class="block no-margin" style="padding:0 8px 4px 8px">
-            <div class="display-flex">
-                <div class="display-block" style="width:100%">
-                    <input type="text" placeholder="" value="kousei" class="bg-color-white text-color-1 rounded-8" style="width:100%; padding:12px 16px 12px 16px" />
+    <div class="tabs-animated-wrap">
+        <div class="tabs">
+            <!-- Home Tab -->
+            <div id="tab-home" class="page-content tab tab-active" style="padding-top:72px">
+                <div class="block no-margin" style="padding:0 8px 4px 8px">
+                    <div class="display-flex">
+                        <div class="display-block" style="width:100%">
+                            <input type="text" placeholder="" value="kousei" class="bg-color-white text-color-1 rounded-8" style="width:100%; padding:12px 16px 12px 16px" />
+                        </div>
+
+                        <div class="display-block">
+                            <a href="/settings" class="button button-fill bg-color-3 rounded-8" style="height:36.8px; width:36.8px; margin-left:6px; border:1px solid white">
+                                <i class="f7-icons text-color-white">gear_alt_fill</i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="display-block">
-                    <a href="/settings" class="button button-fill bg-color-3 rounded-8" style="height:36.8px; width:36.8px; margin-left:6px; border:1px solid white">
-                        <i class="f7-icons text-color-white">gear_alt_fill</i>
-                    </a>
-                </div>
-            </div>
-        </div>
+                <div class="block no-margin" style="padding:2px 8px 4px 8px">
+                    <div class="display-flex" style="margin:-2px">
+                        <div class="" style="padding:2px; width:33.33333%">
+                            <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid white; height:55.8px">
+                                <div class="card-content card-content-padding rounded-8" style="padding:6px">
+                                    <div class="text-color-white" style="font-size:0.8em; margin-bottom:8px">Amateur&nbsp;<span class="text-color-3">1/11</span></div>
+                                    <div style="padding:0 4px">
+                                        <div class="bg-color-1" style="margin-bottom:4px; border-radius:7px; width:calc(100% - 4px); padding:2px">
+                                            <div class="bg-color-6" style="height:10px; width:60%; border-radius:5px"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="block no-margin" style="padding:2px 8px 4px 8px">
-            <div class="display-flex" style="margin:-2px">
-                <div class="" style="padding:2px; width:33.33333%">
-                    <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid white; height:55.8px">
-                        <div class="card-content card-content-padding rounded-8" style="padding:6px">
-                            <div class="text-color-white" style="font-size:0.8em; margin-bottom:8px">Amateur&nbsp;<span class="text-color-3">1/11</span></div>
-                            <div style="padding:0 4px">
-                                <div class="bg-color-1" style="margin-bottom:4px; border-radius:7px; width:calc(100% - 4px); padding:2px">
-                                    <div class="bg-color-6" style="height:10px; width:60%; border-radius:5px"></div>
+                        <div class="" style="padding:2px; width:33.33333%">
+                            <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid white">
+                                <div class="card-content card-content-padding rounded-8" style="padding:6px">
+                                    <div class="text-color-white" style="font-size:0.8em; margin-bottom:6px">Amateur&nbsp;<span class="text-color-3">1/11</span></div>
+                                    <div class="display-flex justify-content-center align-items-center">
+                                        <div class="" style="padding:0 2px; line-height:0">
+                                            <img src="img/coin.png" style="width:15px" alt="Coin" />
+                                        </div>
+
+                                        <div class="text-color-3" style="padding:0 2px; font-size:1em; line-height:0">+10</div>
+
+                                        <div class="" style="padding:0 2px; line-height:0">
+                                            <i class="f7-icons text-color-2" style="font-size:1.5em">info_circle_fill</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="" style="padding:2px; width:33.33333%">
+                            <div class="card bg-color-7 rounded-8 no-margin display-flex justify-content-center align-items-center" style="border:1px solid white; height:55.8px">
+                                <div class="card-content rounded-8" style="padding:6px">
+                                    <div class="text-color-white" style="font-size:1em">Event</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="" style="padding:2px; width:33.33333%">
+                <div class="block" style="padding:2px 8px 0 8px; margin:0 0 24px 0">
                     <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid white">
-                        <div class="card-content card-content-padding rounded-8" style="padding:6px">
-                            <div class="text-color-white" style="font-size:0.8em; margin-bottom:6px">Amateur&nbsp;<span class="text-color-3">1/11</span></div>
-                            <div class="display-flex justify-content-center align-items-center">
-                                <div class="" style="padding:0 2px; line-height:0">
-                                    <img src="img/coin.png" style="width:15px" alt="Coin" />
+                        <div class="card-content rounded-8">
+                            <div class="display-flex" style="width:100%">
+                                <div class="" style="padding:3px; width:33.33333%">
+                                    <div class="card rounded-8 no-margin position-relative daily-select active" id="show-daily-rewards-sheet" style="background:initial; border:0">
+                                        <div class="background-image-cover rounded-8" style="position:absolute; width:100%; height:100%; top:0; left:0; background-image:url('img/bg-2.png')"></div>
+
+                                        <div class="card-content card-content-padding rounded-8" style="padding:3px">
+                                            <div class="text" style="font-size:0.7em; margin-bottom:2px">Daily Reward</div>
+                                            <div class="text-align-center" style="line-height:0">
+                                                <img src="img/daily-reward.png" alt="Daily Reward" style="width:36px" />
+                                            </div>
+                                            <div class="text text-align-right" style="font-size:0.6em; margin-top:-2px; padding-right:4px; padding-bottom:8px; line-height:0">17:23</div>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                <div class="text-color-3" style="padding:0 2px; font-size:1em; line-height:0">+10</div>
+                                <div class="" style="padding:3px; width:33.33333%">
+                                    <div class="card rounded-8 no-margin position-relative daily-select" style="background:initial; border:0">
+                                        <div class="background-image-cover rounded-8" style="position:absolute; width:100%; height:100%; top:0; left:0; background-image:url('img/bg-2.png')"></div>
 
-                                <div class="" style="padding:0 2px; line-height:0">
-                                    <i class="f7-icons text-color-2" style="font-size:1.5em">info_circle_fill</i>
+                                        <div class="card-content card-content-padding rounded-8" style="padding:3px">
+                                            <div class="text" style="font-size:0.7em; margin-bottom:2px">Daily Combo</div>
+                                            <div class="text-align-center" style="line-height:0">
+                                                <img src="img/daily-combo.png" alt="Daily Reward" style="width:36px" />
+                                            </div>
+                                            <div class="text text-align-right" style="font-size:0.6em; margin-top:-2px; padding-right:4px; padding-bottom:8px; line-height:0">17:23</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="" style="padding:3px; width:33.33333%">
+                                    <div class="card rounded-8 no-margin position-relative daily-select" style="background:initial; border:0">
+                                        <div class="background-image-cover rounded-8" style="position:absolute; width:100%; height:100%; top:0; left:0; background-image:url('img/bg-2.png')"></div>
+
+                                        <div class="card-content card-content-padding rounded-8" style="padding:3px">
+                                            <div class="text" style="font-size:0.7em; margin-bottom:2px">Daily Match</div>
+                                            <div class="text-align-center" style="line-height:0">
+                                                <img src="img/daily-match.png" alt="Daily Reward" style="width:36px" />
+                                            </div>
+                                        </div>
+                                        <div class="text text-align-right" style="font-size:0.6em; margin-top:-2px; padding-right:4px; padding-bottom:8px; line-height:0; visibility:hidden">17:23</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="" style="padding:2px; width:33.33333%">
-                    <div class="card bg-color-7 rounded-8 no-margin display-flex justify-content-center align-items-center" style="border:1px solid white; height:55.8px">
+                <div class="block" style="padding:0 8px 0 8px; margin:0 0 24px 0">
+                    <div class="display-flex justify-content-center align-items-center" style="margin-bottom:8px">
+                        <div class="" style="padding:0 6px 0 6px; line-height:initial">
+                            <img src="img/coin.png" style="width:32px" alt="Coin" />
+                        </div>
+
+                        <div class="league-spartan text-color-2" style="padding:0 6px 0 6px; font-size:2.4em; font-weight:600; line-height:initial">1,000</div>
+                    </div>
+
+                    <div style="padding:0 30px">
+                        <div class="bg-color-1" style="margin-bottom:4px; border-radius:7px; width:calc(100% - 4px); padding:2px">
+                            <div class="bg-color-6" style="height:10px; width:60%; border-radius:5px"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block" style="padding:0 8px 0 8px; margin:0 0 8px 0">
+                    <div class="background-image-cover rounded-8" style="background-image:url('img/sky-bg.png'); width:100%; height:330px">
+                        <img src="img/kousei.png" style="width:100%; margin-top:-20px" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Troop Tab -->
+            <div id="tab-troop" class="page-content tab" style="padding-top:72px">
+                <div class="block no-margin" style="padding:2px 8px 4px 8px">
+                    <div class="display-flex" style="margin:-2px">
+                        <div class="" style="padding:2px; width:33.33333%">
+                            <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid white; height:55.8px">
+                                <div class="card-content card-content-padding rounded-8" style="padding:6px">
+                                    <div class="text-color-white" style="font-size:0.8em; margin-bottom:8px">Amateur&nbsp;<span class="text-color-3">1/11</span></div>
+                                    <div style="padding:0 4px">
+                                        <div class="bg-color-1" style="margin-bottom:4px; border-radius:7px; width:calc(100% - 4px); padding:2px">
+                                            <div class="bg-color-6" style="height:10px; width:60%; border-radius:5px"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="" style="padding:2px; width:33.33333%">
+                            <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid white">
+                                <div class="card-content card-content-padding rounded-8" style="padding:6px">
+                                    <div class="text-color-white" style="font-size:0.8em; margin-bottom:6px">Amateur&nbsp;<span class="text-color-3">1/11</span></div>
+                                    <div class="display-flex justify-content-center align-items-center">
+                                        <div class="" style="padding:0 2px; line-height:0">
+                                            <img src="img/coin.png" style="width:15px" alt="Coin" />
+                                        </div>
+
+                                        <div class="text-color-3" style="padding:0 2px; font-size:1em; line-height:0">+10</div>
+
+                                        <div class="" style="padding:0 2px; line-height:0">
+                                            <i class="f7-icons text-color-2" style="font-size:1.5em">info_circle_fill</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="" style="padding:2px; width:33.33333%">
+                            <div class="card bg-color-7 rounded-8 no-margin display-flex justify-content-center align-items-center" style="border:1px solid white; height:55.8px">
+                                <div class="card-content rounded-8" style="padding:6px">
+                                    <div class="text-color-white" style="font-size:1em">Event</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="display-flex justify-content-end align-items-center" style="padding:10px 8px">
+                    <div class="text-color-2" style="padding:0 2px; font-size:1.1em; line-height:0">xx:xx:xx</div>
+
+                    <div class="" style="line-height:0; padding-left:2px">
+                        <i class="f7-icons text-color-2" style="font-size:1.3em">info_circle_fill</i>
+                    </div>
+                </div>
+
+                <div class="block no-margin" style="padding:2px 8px 4px 8px">
+                    <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid white; padding:4px">
                         <div class="card-content rounded-8" style="padding:6px">
-                            <div class="text-color-white" style="font-size:1em">Event</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            <div class="display-flex justify-content-space-between align-items-center" style="margin-bottom:20px">
+                                <div class="display-flex align-items-center" style="padding:4px">
+                                    <div class="text-color-white" style="font-size:1em; padding-right:8px; line-height:0">Daily Combo</div>
 
-        <div class="block" style="padding:2px 8px 0 8px; margin:0 0 24px 0">
-            <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid white">
-                <div class="card-content rounded-8">
-                    <div class="display-flex" style="width:100%">
-                        <div class="" style="padding:3px; width:33.33333%">
-                            <div class="card rounded-8 no-margin position-relative daily-select active" id="show-daily-rewards-sheet" style="background:initial; border:0">
-                                <div class="background-image-cover rounded-8" style="position:absolute; width:100%; height:100%; top:0; left:0; background-image:url('img/bg-2.png')"></div>
+                                    <div class="bg-color-white" style="width:18px; height:18px; border-radius:4px; margin-right:4px"></div>
+                                    <div class="bg-color-white" style="width:18px; height:18px; border-radius:4px; margin-right:4px"></div>
+                                    <div class="bg-color-white" style="width:18px; height:18px; border-radius:4px; margin-right:4px"></div>
+                                </div>
 
-                                <div class="card-content card-content-padding rounded-8" style="padding:3px">
-                                    <div class="text" style="font-size:0.7em; margin-bottom:2px">Daily Reward</div>
-                                    <div class="text-align-center" style="line-height:0">
-                                        <img src="img/daily-reward.png" alt="Daily Reward" style="width:36px" />
-                                    </div>
-                                    <div class="text text-align-right" style="font-size:0.6em; margin-top:-2px; padding-right:4px; padding-bottom:8px; line-height:0">17:23</div>
+                                <div class="">
+                                    <button class="button button-fill bg-color-3" style="padding:4px; height:initial; border-radius:4px 6px">
+                                        <div class="display-flex justify-content-center align-items-center">
+                                            <div class="" style="padding:0 2px; line-height:0">
+                                                <img src="img/coin.png" style="width:18px" alt="Coin" />
+                                            </div>
+                                            <div class="text-color-white" style="line-height:0; margin-right:2px">
+                                                +x,xxx,xxx
+                                            </div>
+                                        </div>
+                                    </button>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="" style="padding:3px; width:33.33333%">
-                            <div class="card rounded-8 no-margin position-relative daily-select" style="background:initial; border:0">
-                                <div class="background-image-cover rounded-8" style="position:absolute; width:100%; height:100%; top:0; left:0; background-image:url('img/bg-2.png')"></div>
-
-                                <div class="card-content card-content-padding rounded-8" style="padding:3px">
-                                    <div class="text" style="font-size:0.7em; margin-bottom:2px">Daily Combo</div>
-                                    <div class="text-align-center" style="line-height:0">
-                                        <img src="img/daily-combo.png" alt="Daily Reward" style="width:36px" />
-                                    </div>
-                                    <div class="text text-align-right" style="font-size:0.6em; margin-top:-2px; padding-right:4px; padding-bottom:8px; line-height:0">17:23</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="" style="padding:3px; width:33.33333%">
-                            <div class="card rounded-8 no-margin position-relative daily-select" style="background:initial; border:0">
-                                <div class="background-image-cover rounded-8" style="position:absolute; width:100%; height:100%; top:0; left:0; background-image:url('img/bg-2.png')"></div>
-
-                                <div class="card-content card-content-padding rounded-8" style="padding:3px">
-                                    <div class="text" style="font-size:0.7em; margin-bottom:2px">Daily Match</div>
-                                    <div class="text-align-center" style="line-height:0">
-                                        <img src="img/daily-match.png" alt="Daily Reward" style="width:36px" />
-                                    </div>
-                                </div>
-                                <div class="text text-align-right" style="font-size:0.6em; margin-top:-2px; padding-right:4px; padding-bottom:8px; line-height:0; visibility:hidden">17:23</div>
+                            <div class="display-flex justify-content-center align-items-center" style="margin-bottom:12px">
+                                <div class="bg-color-white rounded-8" style="width:85px; height:85px; margin:3px"></div>
+                                <div class="bg-color-white rounded-8" style="width:85px; height:85px; margin:3px"></div>
+                                <div class="bg-color-white rounded-8" style="width:85px; height:85px; margin:3px"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="block" style="padding:0 8px 0 8px; margin:0 0 24px 0">
-            <div class="display-flex justify-content-center align-items-center" style="margin-bottom:8px">
-                <div class="" style="padding:0 6px 0 6px; line-height:initial">
-                    <img src="img/coin.png" style="width:32px" alt="Coin" />
+                <div class="display-flex justify-content-center align-items-center" style="margin-top:16px; margin-bottom:8px">
+                    <div class="" style="padding:0 6px 0 6px; line-height:initial">
+                        <img src="img/coin.png" style="width:32px" alt="Coin" />
+                    </div>
+
+                    <div class="league-spartan text-color-2" style="padding:0 6px 0 6px; font-size:2.4em; font-weight:600; line-height:initial">1,000</div>
                 </div>
 
-                <div class="league-spartan text-color-2" style="padding:0 6px 0 6px; font-size:2.4em; font-weight:600; line-height:initial">1,000</div>
-            </div>
+                <div class="display-flex" style="margin:5px; flex-wrap:wrap; position: relative">
+                    <div class="" style="padding:3px; min-width:calc(50% - 6px); width:calc(50% - 6px)">
+                        <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid #5C148C">
+                            <div class="card-content card-content-padding rounded-8" style="position:relative; padding:4px">
+                                <div class="position-relative">
+                                    <img src="img/troop/hiroshi.webp" alt="Hiroshi" style="width:100%" />
 
-            <div style="padding:0 30px">
-                <div class="bg-color-1" style="margin-bottom:4px; border-radius:7px; width:calc(100% - 4px); padding:2px">
-                    <div class="bg-color-6" style="height:10px; width:60%; border-radius:5px"></div>
+                                    <div class="position-absolute display-flex justify-content-space-between align-items-center" style="padding:0 7px; width:calc(100% - 14px); left:0; bottom:4px">
+                                        <div class="text-color-1 line-height-0" style="font-size:1.2em">Hiroshi</div>
+
+                                        <div class="display-flex justify-content-center align-items-center">
+                                            <div class="" style="padding:0 6px; line-height:0">
+                                                <img src="img/coin.png" style="width:18px" alt="Coin" />
+                                            </div>
+                                            <div class="text-color-1" style="line-height:0; font-size:1.1em">
+                                                1,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="display-flex justify-content-space-between align-items-center bg-color-3" style="padding:6px 10px; margin-top:2px; border-radius:0 0 6px 6px">
+                                    <div class="text-color-white" style="line-height:0; font-size:1em">Level 2</div>
+
+                                    <div class="display-flex justify-content-center align-items-center">
+                                        <div class="" style="padding:0 6px; line-height:0">
+                                            <img src="img/coin.png" style="width:18px" alt="Coin" />
+                                        </div>
+                                        <div class="text-color-white" style="line-height:0; font-size:1em">
+                                            1,000
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="" style="padding:3px; min-width:calc(50% - 6px); width:calc(50% - 6px)">
+                        <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid #5C148C">
+                            <div class="card-content card-content-padding rounded-8" style="position:relative; padding:4px">
+                                <div class="position-relative">
+                                    <img src="img/troop/sakura.webp" alt="Hiroshi" style="width:100%" />
+
+                                    <div class="position-absolute display-flex justify-content-space-between align-items-center" style="padding:0 7px; width:calc(100% - 14px); left:0; bottom:4px">
+                                        <div class="text-color-1 line-height-0" style="font-size:1.2em">Sakura</div>
+
+                                        <div class="display-flex justify-content-center align-items-center">
+                                            <div class="" style="padding:0 6px; line-height:0">
+                                                <img src="img/coin.png" style="width:18px" alt="Coin" />
+                                            </div>
+                                            <div class="text-color-1" style="line-height:0; font-size:1.1em">
+                                                1,000
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="display-flex justify-content-space-between align-items-center bg-color-3" style="padding:6px 10px; margin-top:2px; border-radius:0 0 6px 6px">
+                                    <div class="text-color-white" style="line-height:0; font-size:1em">Level 2</div>
+
+                                    <div class="display-flex justify-content-center align-items-center">
+                                        <div class="" style="padding:0 6px; line-height:0">
+                                            <img src="img/coin.png" style="width:18px" alt="Coin" />
+                                        </div>
+                                        <div class="text-color-white" style="line-height:0; font-size:1em">
+                                            1,000
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="block" style="padding:0 8px 0 8px; margin:0 0 8px 0">
-            <div class="background-image-cover rounded-8" style="background-image:url('img/sky-bg.png'); width:100%; height:330px">
-                <img src="img/kousei.png" style="width:100%; margin-top:-20px" alt="" />
+            <div id="tab-friends" class="page-content tab" style="padding-top:72px">
+                <div class="block no-margin">Friends</div>
+            </div>
+
+            <div id="tab-ranking" class="page-content tab" style="padding-top:72px">
+                <div class="block no-margin">Ranking</div>
+            </div>
+
+            <div id="tab-tasks" class="page-content tab" style="padding-top:72px">
+                <div class="block no-margin">Tasks</div>
+            </div>
+
+            <div id="tab-wallet" class="page-content tab" style="padding-top:72px">
+                <div class="block no-margin">Wallet</div>
             </div>
         </div>
     </div>
+
+<!--    <div class="page-content" style="padding-top:72px">-->
+<!--        <div class="block no-margin" style="padding:0 8px 4px 8px">-->
+<!--            <div class="display-flex">-->
+<!--                <div class="display-block" style="width:100%">-->
+<!--                    <input type="text" placeholder="" value="kousei" class="bg-color-white text-color-1 rounded-8" style="width:100%; padding:12px 16px 12px 16px" />-->
+<!--                </div>-->
+
+<!--                <div class="display-block">-->
+<!--                    <a href="/settings" class="button button-fill bg-color-3 rounded-8" style="height:36.8px; width:36.8px; margin-left:6px; border:1px solid white">-->
+<!--                        <i class="f7-icons text-color-white">gear_alt_fill</i>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="block no-margin" style="padding:2px 8px 4px 8px">-->
+<!--            <div class="display-flex" style="margin:-2px">-->
+<!--                <div class="" style="padding:2px; width:33.33333%">-->
+<!--                    <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid white; height:55.8px">-->
+<!--                        <div class="card-content card-content-padding rounded-8" style="padding:6px">-->
+<!--                            <div class="text-color-white" style="font-size:0.8em; margin-bottom:8px">Amateur&nbsp;<span class="text-color-3">1/11</span></div>-->
+<!--                            <div style="padding:0 4px">-->
+<!--                                <div class="bg-color-1" style="margin-bottom:4px; border-radius:7px; width:calc(100% - 4px); padding:2px">-->
+<!--                                    <div class="bg-color-6" style="height:10px; width:60%; border-radius:5px"></div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="" style="padding:2px; width:33.33333%">-->
+<!--                    <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid white">-->
+<!--                        <div class="card-content card-content-padding rounded-8" style="padding:6px">-->
+<!--                            <div class="text-color-white" style="font-size:0.8em; margin-bottom:6px">Amateur&nbsp;<span class="text-color-3">1/11</span></div>-->
+<!--                            <div class="display-flex justify-content-center align-items-center">-->
+<!--                                <div class="" style="padding:0 2px; line-height:0">-->
+<!--                                    <img src="img/coin.png" style="width:15px" alt="Coin" />-->
+<!--                                </div>-->
+
+<!--                                <div class="text-color-3" style="padding:0 2px; font-size:1em; line-height:0">+10</div>-->
+
+<!--                                <div class="" style="padding:0 2px; line-height:0">-->
+<!--                                    <i class="f7-icons text-color-2" style="font-size:1.5em">info_circle_fill</i>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="" style="padding:2px; width:33.33333%">-->
+<!--                    <div class="card bg-color-7 rounded-8 no-margin display-flex justify-content-center align-items-center" style="border:1px solid white; height:55.8px">-->
+<!--                        <div class="card-content rounded-8" style="padding:6px">-->
+<!--                            <div class="text-color-white" style="font-size:1em">Event</div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="block" style="padding:2px 8px 0 8px; margin:0 0 24px 0">-->
+<!--            <div class="card bg-color-7 rounded-8 no-margin" style="border:1px solid white">-->
+<!--                <div class="card-content rounded-8">-->
+<!--                    <div class="display-flex" style="width:100%">-->
+<!--                        <div class="" style="padding:3px; width:33.33333%">-->
+<!--                            <div class="card rounded-8 no-margin position-relative daily-select active" id="show-daily-rewards-sheet" style="background:initial; border:0">-->
+<!--                                <div class="background-image-cover rounded-8" style="position:absolute; width:100%; height:100%; top:0; left:0; background-image:url('img/bg-2.png')"></div>-->
+
+<!--                                <div class="card-content card-content-padding rounded-8" style="padding:3px">-->
+<!--                                    <div class="text" style="font-size:0.7em; margin-bottom:2px">Daily Reward</div>-->
+<!--                                    <div class="text-align-center" style="line-height:0">-->
+<!--                                        <img src="img/daily-reward.png" alt="Daily Reward" style="width:36px" />-->
+<!--                                    </div>-->
+<!--                                    <div class="text text-align-right" style="font-size:0.6em; margin-top:-2px; padding-right:4px; padding-bottom:8px; line-height:0">17:23</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="" style="padding:3px; width:33.33333%">-->
+<!--                            <div class="card rounded-8 no-margin position-relative daily-select" style="background:initial; border:0">-->
+<!--                                <div class="background-image-cover rounded-8" style="position:absolute; width:100%; height:100%; top:0; left:0; background-image:url('img/bg-2.png')"></div>-->
+
+<!--                                <div class="card-content card-content-padding rounded-8" style="padding:3px">-->
+<!--                                    <div class="text" style="font-size:0.7em; margin-bottom:2px">Daily Combo</div>-->
+<!--                                    <div class="text-align-center" style="line-height:0">-->
+<!--                                        <img src="img/daily-combo.png" alt="Daily Reward" style="width:36px" />-->
+<!--                                    </div>-->
+<!--                                    <div class="text text-align-right" style="font-size:0.6em; margin-top:-2px; padding-right:4px; padding-bottom:8px; line-height:0">17:23</div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="" style="padding:3px; width:33.33333%">-->
+<!--                            <div class="card rounded-8 no-margin position-relative daily-select" style="background:initial; border:0">-->
+<!--                                <div class="background-image-cover rounded-8" style="position:absolute; width:100%; height:100%; top:0; left:0; background-image:url('img/bg-2.png')"></div>-->
+
+<!--                                <div class="card-content card-content-padding rounded-8" style="padding:3px">-->
+<!--                                    <div class="text" style="font-size:0.7em; margin-bottom:2px">Daily Match</div>-->
+<!--                                    <div class="text-align-center" style="line-height:0">-->
+<!--                                        <img src="img/daily-match.png" alt="Daily Reward" style="width:36px" />-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                                <div class="text text-align-right" style="font-size:0.6em; margin-top:-2px; padding-right:4px; padding-bottom:8px; line-height:0; visibility:hidden">17:23</div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="block" style="padding:0 8px 0 8px; margin:0 0 24px 0">-->
+<!--            <div class="display-flex justify-content-center align-items-center" style="margin-bottom:8px">-->
+<!--                <div class="" style="padding:0 6px 0 6px; line-height:initial">-->
+<!--                    <img src="img/coin.png" style="width:32px" alt="Coin" />-->
+<!--                </div>-->
+
+<!--                <div class="league-spartan text-color-2" style="padding:0 6px 0 6px; font-size:2.4em; font-weight:600; line-height:initial">1,000</div>-->
+<!--            </div>-->
+
+<!--            <div style="padding:0 30px">-->
+<!--                <div class="bg-color-1" style="margin-bottom:4px; border-radius:7px; width:calc(100% - 4px); padding:2px">-->
+<!--                    <div class="bg-color-6" style="height:10px; width:60%; border-radius:5px"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <div class="block" style="padding:0 8px 0 8px; margin:0 0 8px 0">-->
+<!--            <div class="background-image-cover rounded-8" style="background-image:url('img/sky-bg.png'); width:100%; height:330px">-->
+<!--                <img src="img/kousei.png" style="width:100%; margin-top:-20px" alt="" />-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </div>
