@@ -56,6 +56,8 @@ $(window).load(function() {
 
     setTimeout(function() {
         $("body").css("opacity", "1");
+
+        app.tab.show("#tab-friends", true);
     }, 500)
 });
 

@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="457e4b6b-3637-4ca7-8b5e-8e2b6dda4d11" name="Changes" comment="Add preloading of html pages">
-      <change afterPath="$PROJECT_DIR$/img/troop/hiroshi.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/troop/sakura.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/troop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bg-4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/gift-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/gift-2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
     </list>
@@ -49,7 +50,7 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/Bernard/Codes/tap-tap-stackey/img/troop",
+    "last_opened_file_path": "E:/Bernard/Codes/tap-tap-stackey/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,9 +62,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Bernard\Codes\tap-tap-stackey\img" />
       <recent name="E:\Bernard\Codes\tap-tap-stackey\img\troop" />
       <recent name="E:\Bernard\Codes\tap-tap-stackey\pages" />
-      <recent name="E:\Bernard\Codes\tap-tap-stackey\img" />
       <recent name="E:\Bernard\Codes\tap-tap-stackey\css" />
     </key>
   </component>
@@ -85,6 +86,7 @@
       <updated>1733032837597</updated>
       <workItem from="1733032840351" duration="16184000" />
       <workItem from="1733066545209" duration="100748000" />
+      <workItem from="1733733271206" duration="7661000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
