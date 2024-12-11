@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="457e4b6b-3637-4ca7-8b5e-8e2b6dda4d11" name="Changes" comment="Add ranking page">
+    <list default="true" id="457e4b6b-3637-4ca7-8b5e-8e2b6dda4d11" name="Changes" comment="Add tasks page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
@@ -83,7 +83,7 @@
       <updated>1733032837597</updated>
       <workItem from="1733032840351" duration="16184000" />
       <workItem from="1733066545209" duration="100748000" />
-      <workItem from="1733733271206" duration="25085000" />
+      <workItem from="1733733271206" duration="26675000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -429,7 +429,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733921759263</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Add tasks page">
+      <option name="closed" value="true" />
+      <created>1733934345251</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1733934345251</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,6 +474,7 @@
     <MESSAGE value="Add friends page" />
     <MESSAGE value="Fix layout in friends page" />
     <MESSAGE value="Add ranking page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ranking page" />
+    <MESSAGE value="Add tasks page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tasks page" />
   </component>
 </project>
