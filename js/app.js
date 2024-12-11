@@ -57,7 +57,17 @@ $(window).load(function() {
     setTimeout(function() {
         $("body").css("opacity", "1");
 
-        app.tab.show("#tab-friends", true);
+        if(environment === "local") {
+            app.tab.show("#tab-ranking", true);
+        }
+
+        const swiper = app.swiper.create('.swiper-container', {
+            navigation: {
+                nextEl: '.custom-swiper-button-next',
+                prevEl: '.custom-swiper-button-prev',
+            },
+            loop: true, // Optional: Enable looping
+        });
     }, 500)
 });
 
