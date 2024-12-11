@@ -58,7 +58,7 @@ $(window).load(function() {
         $("body").css("opacity", "1");
 
         if(environment === "local") {
-            app.tab.show("#tab-ranking", true);
+            app.tab.show("#tab-tasks", true);
         }
 
         const swiper = app.swiper.create('.swiper-container', {
